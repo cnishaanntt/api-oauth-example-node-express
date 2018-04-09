@@ -7,7 +7,7 @@ app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 
 app.use(session({
-  secret: 'BI6IroTKz8KU3ZndoVVT8adohNFirQlJSOadkfH9HRH9Y3zcru6ix1A1R9whdHlqXopzdGYzCT14xfP06Jc0QZ5c0FNk4WL7Ddbld5coyP5Ghc2n4Cosgz58WPvoeeNJ',
+  secret: 'Your secret',
   resave: false,
   saveUninitialized: true,
   cookie: {
@@ -16,7 +16,7 @@ app.use(session({
 }));
 
 app.get('/', async (req, res) => {
-  const scope = 'report:eye-color report:beard-thickness report:morning-person';
+  const scope = 'report:beta-carotene report:blood-glucose report:calcium report:carbohydrate-intake report:folate report:iron report:magnesium report:phosphorus report:protein-intake report:vitamin-a report:vitamin-b12 report:vitamin-d report:vitamin-e';
   const authorizeUrl = genomeLink.OAuth.authorizeUrl({ scope: scope });
 
   // Fetching a protected resource using an OAuth2 token if exists.
