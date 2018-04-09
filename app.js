@@ -7,7 +7,7 @@ app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 
 app.use(session({
-  secret: 'YOURSECRET',
+  secret: 'BI6IroTKz8KU3ZndoVVT8adohNFirQlJSOadkfH9HRH9Y3zcru6ix1A1R9whdHlqXopzdGYzCT14xfP06Jc0QZ5c0FNk4WL7Ddbld5coyP5Ghc2n4Cosgz58WPvoeeNJ',
   resave: false,
   saveUninitialized: true,
   cookie: {
