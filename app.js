@@ -16,7 +16,7 @@ app.use(session({
 }));
 
 app.get('/', async (req, res) => {
-  const scope = 'report:beta-carotene report:blood-glucose report:calcium report:carbohydrate-intake report:folate report:iron report:magnesium report:phosphorus report:protein-intake report:vitamin-a report:vitamin-b12 report:vitamin-d report:vitamin-e';
+  const scope = 'report:calcium report:carbohydrate-intake report:iron report:magnesium report:phosphorus report:protein-intake report:vitamin-a report:vitamin-b12 report:vitamin-d report:vitamin-e';
   const authorizeUrl = genomeLink.OAuth.authorizeUrl({ scope: scope });
 
   // Fetching a protected resource using an OAuth2 token if exists.
