@@ -16,7 +16,7 @@ app.use(session({
 }));
 
 app.get('/', async (req, res) => {
-  const scope = 'report:calcium ';
+  const scope = 'report:calcium report:morning-person';
   const authorizeUrl = genomeLink.OAuth.authorizeUrl({ scope: scope });
 
   // Fetching a protected resource using an OAuth2 token if exists.
